@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "dca1ccd3-1994-4a38-b741-ce7a3dfda334",
+		"name": "Kalpas_CSV_APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CSV Upload API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNwb25zZSI6eyJhdXRoZW50aWNhdGlvbiI6dHJ1ZSwibWVzc2FnZSI6IkxvZ2luIHN1Y2Nlc3NGdWxsLi4hISIsInVzZXIiOnsidXNlciI6IkFCQ0B5eHouY29tIn19LCJpYXQiOjE2MzY4Mjg2ODR9.x5SJBBdAm-8OaScmhTDLU1wxFQhoec1WLTY-j0URvvo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Rajan/Downloads/FL_insurance_sample.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://pure-sierra-79754.herokuapp.com/api/upload",
+					"protocol": "https",
+					"host": [
+						"pure-sierra-79754",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Insurance API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNwb25zZSI6eyJhdXRoZW50aWNhdGlvbiI6dHJ1ZSwibWVzc2FnZSI6IkxvZ2luIHN1Y2Nlc3NGdWxsLi4hISIsInVzZXIiOnsidXNlciI6IkFCQ0B5eHouY29tIn19LCJpYXQiOjE2MzY4Mjg2ODR9.x5SJBBdAm-8OaScmhTDLU1wxFQhoec1WLTY-j0URvvo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pure-sierra-79754.herokuapp.com/api/insurance",
+					"protocol": "https",
+					"host": [
+						"pure-sierra-79754",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"insurance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new Insurance ",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNwb25zZSI6eyJhdXRoZW50aWNhdGlvbiI6dHJ1ZSwibWVzc2FnZSI6IkxvZ2luIHN1Y2Nlc3NGdWxsLi4hISIsInVzZXIiOnsidXNlciI6IkFCQ0B5eHouY29tIn19LCJpYXQiOjE2MzY4Mjg2ODR9.x5SJBBdAm-8OaScmhTDLU1wxFQhoec1WLTY-j0URvvo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"policyID\": \"1197364\",\r\n            \"statecode\": \"FL\",\r\n            \"eq_site_limit\": \"498960\",\r\n            \"fl_site_limit\": \"498960\",\r\n            \"fr_site_limit\": \"498960\",\r\n            \"tiv_2011\": \"498960\",\r\n            \"tiv_2012\": \"792148.9\",\r\n            \"eq_site_deductible\": \"0\",\r\n            \"hu_site_deductible\": \"9979.2\",\r\n            \"fl_site_deductible\": \"0\",\r\n            \"fr_site_deductible\": \"0\",\r\n            \"point_longitude\": \"-81.711777\",\r\n            \"line\": \"Residential\",\r\n            \"point_granularity\": \"2\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pure-sierra-79754.herokuapp.com/api/insurance",
+					"protocol": "https",
+					"host": [
+						"pure-sierra-79754",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"insurance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Insurance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNwb25zZSI6eyJhdXRoZW50aWNhdGlvbiI6dHJ1ZSwibWVzc2FnZSI6IkxvZ2luIHN1Y2Nlc3NGdWxsLi4hISIsInVzZXIiOnsidXNlciI6IkFCQ0B5eHouY29tIn19LCJpYXQiOjE2MzY4Mjg2ODR9.x5SJBBdAm-8OaScmhTDLU1wxFQhoec1WLTY-j0URvvo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"policyID\": \"1197364\",\r\n        \"statecode\": \"FLS\",\r\n        \"eq_site_limit\": \"498960\",\r\n        \"fl_site_limit\": \"498960\",\r\n        \"fr_site_limit\": \"498960\",\r\n        \"tiv_2011\": \"498960\",\r\n        \"tiv_2012\": \"792148.9\",\r\n        \"eq_site_deductible\": \"0\",\r\n        \"hu_site_deductible\": \"9979.2\",\r\n        \"fl_site_deductible\": \"0\",\r\n        \"fr_site_deductible\": \"0\",\r\n        \"point_longitude\": \"-81.711777\",\r\n        \"line\": \"Residential\",\r\n        \"point_granularity\": \"2\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pure-sierra-79754.herokuapp.com/api/insurance",
+					"protocol": "https",
+					"host": [
+						"pure-sierra-79754",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"insurance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete insurance",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"policyID\": \"1197364\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pure-sierra-79754.herokuapp.com/api/insurance",
+					"protocol": "https",
+					"host": [
+						"pure-sierra-79754",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"insurance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login API for getting access token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"ABC@yxz.com\",\r\n    \"password\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pure-sierra-79754.herokuapp.com/api/login",
+					"protocol": "https",
+					"host": [
+						"pure-sierra-79754",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
